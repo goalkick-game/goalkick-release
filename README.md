@@ -57,20 +57,43 @@ It is a standalone app: no Python, no installation.
 
 ### 2. Make the team
 
-Open the editor and point it at a copy of this repository's `data/` folder
-(or start a fresh bundle — the editor writes a self-contained team folder).
-For each team you set:
+![The GoalKick Editor: the team list, the team form, the squad table, and the live previews on the right.](docs/img/editor-team.png)
 
-- **Name, short name (3 letters), and league/zone.**
-- **Colours and two kits** — home and away. The editor draws the shirts.
-- **A crest/logo** and, for a national team, a **flag** (the editor has a flag
-  painter and a shirt-logo importer built in).
-- **A squad** — 16+ players with positions and simple ratings. The editor can
-  generate a plausible squad you then tune.
+Clone or download this repo first so the editor has teams to work with. Then:
 
-Every team is one folder of plain text and images under `data/teams/<slug>/`.
-The editor is the friendly way to write that folder; you can also read a few of
-the existing ones to see the shape.
+1. **Point the editor at the `data/` folder.** Click **Game folder** (top left)
+   and choose the `data/` directory of your checkout. The team list fills in on
+   the left; pick one to edit it, or **New team** to start fresh.
+2. **Fill in the team form** (middle column):
+   - **Name**, **short name** (3 letters), and **League** (the zone it plays in).
+   - **Shirt colour** and **Shorts colour** — click a colour bar to change it.
+     The editor draws both kits from these; the kit preview is on the right.
+   - **Kit** — leave it drawing from the colours, or **Import kit images…** to
+     supply your own `kit_01.png` / `kit_02.png`.
+   - **Logo** — **Import logo…** to set the crest (shown bottom-right).
+   - **Shirt logo** — optional: **Import shirt logo…** with a transparent PNG
+     and it is composited onto the shirt's chest.
+   - **Flag** — **Import flag…** for a PNG, or **Paint stripes…** to draw one
+     (see below). National flags should be painted, not copied — a flag's
+     design is free, a particular image of it may not be.
+3. **Build the squad** in the table at the bottom: **Add player**, then set each
+   name, **Role** (GK/DF/MF/FW positions), **Age**, **Skill** (0–1), height.
+   Aim for 16+ players. You can start from an existing team and edit.
+4. **Save team**, and — if you want to see it in a local build — **Build
+   database** compiles every bundle into the game's database.
+
+Every team is one folder of plain text and images under `data/teams/<slug>/`;
+the editor is just the friendly way to write it. Open one of the existing teams
+in the list to see the shape.
+
+#### The flag painter
+
+![The flag painter: a layout, per-band colour pickers, and a live flag preview.](docs/img/editor-flag.png)
+
+**Paint stripes…** opens the flag painter. Choose a **layout** (horizontal or
+vertical bands, and more), set each band's colour, and the preview updates live.
+It writes an original 120×80 rendering — which is exactly what keeps national
+flags safe to ship. Click **OK** to attach it to the team.
 
 ### 3. Open a pull request
 
