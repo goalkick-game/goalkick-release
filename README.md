@@ -15,9 +15,9 @@ Get the latest build from the [**Releases**](../../releases/latest) page:
 
 | Platform | File | How to run |
 |----------|------|------------|
-| **Windows** | `goalkick.zip` | Unzip anywhere, run `goalkick.exe`. Nothing to install. |
-| **Linux** | `goalkick.tar.gz` | Extract, run `goalkick/goalkick.x86_64`. |
-| **Android** | `goalkick.apk` | Enable "install from this source" on first install. |
+| **Windows** | `goalkick-windows.zip` | Unzip anywhere, run `goalkick.exe`. Nothing to install. |
+| **Linux** | `goalkick-linux.tar.gz` | Extract, run `goalkick/goalkick.x86_64`. |
+| **Android** | `goalkick-android.apk` | Enable "install from this source" on first install. |
 
 Because this is an alpha, **online play needs both players on the same
 release**. Update all your devices together before playing online.
@@ -48,9 +48,9 @@ Editor** and a GitHub account.
 Download the **GoalKick Editor** for your platform from the
 [Releases](../../releases/latest) page:
 
-- **Windows** — `GoalKickEditor.exe`
-- **Linux** — `GoalKickEditor` (`chmod +x` it first)
-- **macOS** — `GoalKick-Editor-macos.zip` (right-click → Open the first time)
+- **Windows** — `GoalKickEditor-windows-x86_64.exe`
+- **Linux** — `GoalKickEditor-linux-x86_64` (`chmod +x` it first)
+- **macOS** — coming soon
 
 It is a standalone app: no Python, no installation.
 
@@ -102,8 +102,8 @@ What is not:
 
 If in doubt, make an original crest in the editor — a distinctive mark in the
 team's colours reads as that team in-game, and it is unambiguously yours to
-give. By opening a PR you confirm the artwork is yours to contribute and license
-to this project under the repository's `LICENSE`.
+give. By opening a PR you confirm the artwork is yours to contribute, and that you
+grant the project the right to include it in GoalKick's releases.
 
 ---
 
