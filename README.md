@@ -17,6 +17,7 @@ Get the latest build from the [**Releases**](../../releases/latest) page:
 |----------|------|------------|
 | **Windows** | `goalkick-windows.zip` | Unzip anywhere, run `goalkick.exe`. Nothing to install. |
 | **Linux** | `goalkick-linux.tar.gz` | Extract, run `goalkick/goalkick.x86_64`. |
+| **macOS** | `goalkick-mac-silicon.dmg` (Apple silicon) / `goalkick-mac-intel.dmg` (Intel) | Open the disk image, drag to Applications. Right-click → Open the first time. |
 | **Android** | `goalkick-android.apk` | Enable "install from this source" on first install. |
 
 Because this is an alpha, **online play needs both players on the same
@@ -50,7 +51,7 @@ Download the **GoalKick Editor** for your platform from the
 
 - **Windows** — `GoalKickEditor-windows-x86_64.exe`
 - **Linux** — `GoalKickEditor-linux-x86_64` (`chmod +x` it first)
-- **macOS** — coming soon
+- **macOS** — `GoalKickEditor-macos-arm64.zip` (Apple silicon; unzip, right-click → Open the first time)
 
 It is a standalone app: no Python, no installation.
 
