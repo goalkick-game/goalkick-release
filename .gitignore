@@ -1,0 +1,5 @@
+# generated / not source
+data/databases/
+data/football.config
+*.pyc
+__pycache__/
